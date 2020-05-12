@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>アクアリウム器具の比較：海の覚書</title>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="keywords" content="水槽,アクアリウム,クーラー,プロテインスキマー" />
+<meta name="description" content="アクアリウム器具のスペックの比較サイト" />
+<link type="text/css" rel='stylesheet' href='css/style2.css' />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/list.min.js"></script>
+</head>
+
+<body>
+
+
+<div id="headerbox">
+	<div id="header">
+		<div id="title">
+			<a href="index.html"><img src="img/logo2.png" alt="海の覚書" Border="0"></a>
+		</div>
+	</div>
+</div>
+
+<div id="menubox">
+	<ul id="menu">
+			<li>
+				<a href="index.html"><img src="img/menu-home-on.jpg" alt="トップページ" Border="0">
+				</a>
+			</li>
+			<li>
+				<a href="cooler/cooler-list.html"><img src="img/menu-cooler.jpg" onmouseover="this.src='img/menu-cooler-on.jpg'" onmouseout="this.src='img/menu-cooler.jpg'" alt="クーラー" Border="0">
+				</a>
+			</li>
+			<li>
+				<a href="skim/skim-list.html"><img src="img/menu-skim.jpg" onmouseover="this.src='img/menu-skim-on.jpg'" onmouseout="this.src='img/menu-skim.jpg'" alt="プロテインスキマー" Border="0">
+				</a>
+			</li>
+			<li>
+				<a href="contact/contact.html"><img src="img/menu-contact.jpg" onmouseover="this.src='img/menu-contact-on.jpg'" onmouseout="this.src='img/menu-contact.jpg'" alt="お問い合わせ" Border="0">
+				</a>
+			</li>
+			<li>
+				<a href="" style="cursor: default;"><img src="img/menu-space.jpg"  Border="0"></a>
+			</li>
+	</ul>
+
+	<div id="submenu">
+		このサイトについて
+	</div>
+
+</div>
+
+
+
+<div id="page">
+
+<div id="main">
+
+
+  <h1>このサイトについて</h1>
+
+		<p>個人でまとめたものなので、間違っている箇所、抜けている箇所がある可能性大です。</br>
+		間違いを発見しましたら教えていただけると嬉しいです。</p>
+		<p><b>あくまで簡単なスペックの比較です。各製品それぞれ様々な工夫を凝らしているので、</br>
+		実際に購入する際はお店と相談して自分の水槽に合ったものを選びましょう。</b></p>
+
+
+	</br>
+	</br>
+
+</div>
+
+	<p class="pagetop"><a href="#page">▲</a></p>
+
+
+<div id="footer">
+UMI-OBOE
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setDomainName','.www.ne.jp']);
+  _gaq.push(['_setCookiePath','/asahi/oboe/umi/']);
+  _gaq.push(['_setAccount', 'UA-40301629-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+	//ページトップ
+	$(document).ready(function(){
+
+	var pagetop = $('.pagetop');
+
+	$(window).scroll(function(){
+		if ( $(this).scrollTop() > 500 ) {
+			pagetop.fadeIn();
+		} else {
+			pagetop.fadeOut();
+		}
+	});
+
+	pagetop.click(function () {
+		$('body, html').animate({ scrollTop: 0 }, 500);
+		return false;
+	});
+
+	});
+
+</script>
+
+</body>
+</html>
