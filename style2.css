@@ -1,0 +1,530 @@
+@charset "UTF-8";
+
+* { /* 全称セレクタで余白とマージンを０に */
+margin:0;
+padding:0;
+}
+
+
+
+body {
+	margin: 0;
+	font-size: 85%;
+	color: #333;
+	font-family: Arial, "メイリオ", "Meiryo", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Osaka", sans-serif;
+	background-image: url(../img/bg-00.png);
+	background-color: #FFFFFF;
+}
+
+p, /* 文章の行間を指定 */
+#main ul,
+#main ol,
+#page,
+dl
+{
+	line-height: 200%;
+	letter-spacing: 0.1em;
+}
+
+
+/* ========================================  #page ページ外枠 */
+#page {
+	width:1080px;
+	padding: 0px 0px;
+	margin: 0px auto;;
+	text-align: left;
+	border-radius: 20px;
+	background-color: #FFFFFF;
+}
+
+
+
+
+/* ========================================  header タイトル */
+#headerbox{
+	width:100%;
+	min-width:1100px;
+	background-image: url(../img/bg-00.png);
+}
+
+
+/* ========================================  header タイトル */
+#header{
+	width:1080px;
+	padding: 15px 0px 15px 0px;
+	text-align: left;
+	height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#title{
+	margin: 0px 0px 0px 0px;
+}
+
+
+
+
+/* ========================================  header メニュー */
+#menubox{
+	width:100%;
+	min-width:1100px;
+}
+
+
+
+
+
+/* ========================================  menu メニュー */
+#menu {
+	width: 1080px;
+	height: 50px;
+	padding: 0px 0px 0 0px;
+	margin-right: auto;
+	margin-left: auto;
+	list-style: none;
+}
+
+#menu li {
+	float: left;
+	padding: 0 0px 0 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+#menu li a {
+	float: left;
+	text-decoration: none;
+	font-size: 100%;
+	font-weight: 600;
+	color: #666666;
+	padding: 0 0px 0 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+/* ========================================  submenu サブメニュー */
+#submenu  {
+	width: 1080px;
+	font-size: 100%;
+	font-weight: 600;
+	color: #666666;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	margin-right: auto;
+	margin-left: auto;
+	clear: left;
+}
+
+#submenu a {
+	font-size: 100%;
+	font-weight: 600;
+	padding: 0 0px 0 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+/* ========================================  main メイン */
+#main {
+	float: left;
+	clear: left;
+	width: 1040px;
+	padding: 20px 20px 0 20px;
+	margin: 0 auto;
+}
+
+#main p {
+	padding: 0px 10px 0 10px;
+}
+
+
+
+
+
+
+/* ========================================  見出し */
+h1 {
+  position: relative;
+  color: #555555;
+  background: #ececec;
+  font-size: 150%;
+  line-height: 2;
+  margin: 5px 0px 20px 0px;
+  padding: 14px 5px 10px 50px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 1px #777;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  background: #f5f5f5;
+  top: 50%;
+  left: 14px;
+  margin-top :-10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px #777 inset;
+}
+
+h1:after {
+  content: "";
+  position: absolute;
+  background: #f5f5f5;
+  top: 50%;
+  left: 1006px;
+  margin-top :-10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px #777 inset;
+}
+
+
+
+h4 {
+  position: relative;
+  color: #555555;
+  font-size: 150%;
+  line-height: 1;
+  margin: 40px 0px 0px 10px;
+  padding: 14px 5px 10px 10px;
+}
+
+h4:before {
+  content: "";
+  position: absolute;
+  background: #999;
+  top: 0;
+  left: -5px;
+  height: 12px;
+  width: 12px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+h4:after {
+  content: "";
+  position: absolute;
+  background: #777;
+  top: 15px;
+  left: -10px;
+  height: 8px;
+  width: 8px;
+  transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+}
+
+
+
+
+#main h5 { /* 本文の小見出し */
+	padding: 0px 0px 0px 0px;
+	color: #666666;
+	font-size: 160%;
+	font-weight: 500;
+	margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+/* ========================================  横線 */
+
+HR.kugiri {
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(255,255,255,1.0);
+	margin: 0px 0px 20px 0px;
+}
+
+
+
+
+/* ========================================  テーブル項目説明 */
+
+table.koumoku {
+	margin:10px 10px 20px 10px;
+	width: 1020px
+}
+
+table.koumoku td.ktd {
+	width: 110px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 8px 10px;
+	color: #666666;
+	font-size: 120%;
+	font-weight: 500;
+	border-bottom: 2px #777777 dotted;
+}
+
+table.koumoku td.std {
+	text-align: left;
+	vertical-align: middle;
+	padding: 8px 10px;
+	border-bottom: 2px #777777 dotted;
+}
+
+
+
+
+
+/* ========================================  絞り込みボタン枠 */
+.kakomi10 {
+	border: 3px solid #DCDDDD;
+	padding: 10px 10px 5px 10px;
+	text-align: center;
+	font-size: 100%;
+	margin: -20px 10px 20px 10px;
+	background: #f9f9f9;
+	position: relative;
+	z-index: 1;
+}
+
+
+
+
+.kakomi10_h {
+	width: 120px;
+	height: 30px;
+	font-size: 100%;
+	text-align: center;
+	line-height: 30px;
+	padding: 0px 0px;
+	margin: 0px 0px 0px 30px;
+	background: #fdfdfd;
+	color: #333333;
+	font-weight: 600;
+	border: 3px solid #DCDDDD;
+	border-radius: 10px 10px;
+	position: relative;
+	z-index: 2;
+ }
+
+
+
+
+
+
+/* ========================================  絞り込みボタン */
+.button01 {
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	font-size: 100%;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	background-color: rgba(220, 220, 220, 0.6);
+	color: #333333;
+	margin: 5px 5px 5px 0px;
+}
+
+.button01:hover {
+	background-color: #333333;
+	color: #cccccc;
+}
+
+.button01:active {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #cccccc;
+}
+
+
+
+
+
+
+
+/* ========================================  テーブル */
+
+table.tablesorter {
+	font-family: arial;
+	letter-spacing: 0.1em;
+	margin: 35px 10px 20px 10px;
+	width: 1020px;
+	border-collapse: collapse;
+	border: 3px solid #DCDDDD;
+	text-align: center;
+}
+
+table.tablesorter thead tr th {
+	color: #333333;
+	font-weight: 900;
+	border: 1px solid #cccccc;
+	padding: 7px 7px 7px 7px;
+	background-color: #e1e1e1;
+}
+
+table.tablesorter tr:nth-child(2n) {    /* 偶数番目(2,4,6……番目) */
+   	background-color: #F4F4F4;
+}
+
+table.tablesorter tr:nth-child(2n+1) {    /* 奇数番目 */
+   	background-color: #fcfcfc;
+}
+
+table.tablesorter td:nth-child(1) {    /* 商品画像列 */
+	width: 64px;
+   	background-color: #ffffff;
+}
+
+table.tablesorter tbody td {
+	color: #444444;
+	padding: 0px;
+	border: 1px solid #cccccc;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+table.tablesorter td.price {
+	width: 100px;
+}
+
+
+
+
+/* ========================================  form フォーム */
+#form  {
+	float: left;
+	width: 445px;
+	height: 400px;
+	font-size: 120%;
+	font-weight: 600;
+	color: #333333;
+	background: #f9f9f9;
+	background-color: rgba(220, 220, 220, 0.6);
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(255,255,255,1.0);
+	border-bottom: 1px solid rgba(255,255,255,1.0);
+	padding: 20px 0px 10px 20px;
+	margin: 20px 0px 10px 10px;
+}
+
+#form p {
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#form input, select, textarea {
+	width: 250px;
+	margin: 0px;
+	padding: 5px;
+	font-size: 100%;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(255,255,255,1.0);
+	border-bottom: 1px solid rgba(255,255,255,1.0);
+}
+
+#form textarea {
+	width: 400px;
+}
+
+input.button {
+	float: left;
+	clear: left;
+	width: 150px;
+	height: 45px;
+	margin: 0px 0px 20px 10px;
+	font-size: 120%;
+	font-weight: 600;
+	color: #333333;
+	background-color: rgba(220, 220, 220, 0.6);
+	cursor: pointer;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(0,0,0,0.1);
+	border-left: 1px solid rgba(255,255,255,1.0);
+	border-top: 1px solid rgba(255,255,255,1.0);
+}
+
+input.button:hover {
+	background-color: #333333;
+	color: #cccccc;
+}
+
+input.button:active {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #cccccc;
+}
+
+
+
+
+
+
+
+/* ========================================  更新履歴 */
+#history {
+	margin: 0px 0px 0px 20px;
+}
+
+
+
+
+/* ========================================  ページトップへ戻る */
+
+.pagetop {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 55px;
+}
+
+.pagetop a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #777777;
+	text-align: center;
+	color: #eee;
+	font-size: 24px;
+	text-decoration: none;
+	line-height: 50px;
+	border-radius: 12px 12px;
+}
+
+.pagetop a:hover {
+	background-color: #333333;
+	color: #eee;
+}
+
+
+
+
+/* ========================================  #footer 画面下部 */
+
+#footer {
+	clear: both;
+	padding: 10px 0px 15px 0px;
+	margin: 0px 0px 0px 0px;
+	height: 15px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(255,255,255,1.0);
+	background-image: url(../img/bg-01.png);
+	text-align: center;
+	color: #999999;
+	font-size: 100%;
+	font-weight: 400;
+	font-family: "Times New Roman", "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+}
